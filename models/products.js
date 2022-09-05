@@ -1,3 +1,4 @@
+const path = require('path');
 const products = [];
 
 module.exports = class Product {
@@ -6,6 +7,12 @@ module.exports = class Product {
   }
 
   save() {
+    path = path.join(
+      path.dirname(process.mainModule.filename),
+      'data',
+      'products.json'  
+    );
+
     products.push(this);
   }
 
