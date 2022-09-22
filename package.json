@@ -9,7 +9,7 @@
     "start-server": "node app.js",
     "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
-  "author": "Maximilian Schwarzmüller",
+  "author": "Vasyl Matviishyn",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.18.3",
@@ -21,5 +21,10 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "pug": "^2.0.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "none"
   }
 }
